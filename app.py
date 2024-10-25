@@ -13,7 +13,7 @@ st.set_page_config(page_title='Dashboard Interativa', layout='wide')
 # Função para download de relatório PDF
 def download_relatorio_pdf():
     try:
-        with open(r"Relatório 2024.pdf", 'rb') as f:
+        with open(r"Relatório AlphaWave.pdf", 'rb') as f:
             st.sidebar.download_button(
                 label='Baixar Relatório Completo (PDF)',
                 data=f,
