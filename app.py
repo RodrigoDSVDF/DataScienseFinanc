@@ -13,7 +13,7 @@ st.set_page_config(page_title='Dashboard Interativa', layout='wide')
 # Função para download de relatório PDF
 def download_relatorio_pdf():
     try:
-        with open(r"C:\Users\Rodrigo_df\OneDrive\Documentos\Curriculo122024.pdf", 'rb') as f:
+        with open(r"Relatório 2024.pdf", 'rb') as f:
             st.sidebar.download_button(
                 label='Baixar Relatório Completo (PDF)',
                 data=f,
@@ -23,7 +23,7 @@ def download_relatorio_pdf():
     except Exception as e:
         st.sidebar.error(f"Erro ao gerar relatório: {e}")
 
-st.sidebar.image(r'C:\Users\Rodrigo_df\Downloads\Alpha-Wave-Analytics---Logo.jpg', use_column_width=True)
+st.sidebar.image(r'Alpha-Wave-Analytics---Logo.jpg', use_column_width=True)
 
 # Função para carregar dados com cache e tratamento de erros
 @st.cache_data
@@ -63,7 +63,7 @@ menu = st.sidebar.radio(
 # Página de apresentação
 if menu == 'Apresentação':
     st.title("Análise de Mercados: Decisões Informadas e Estratégicas")
-    st.image(r'C:\Users\Rodrigo_df\Downloads\gettyimages-1458179196-1- (1).jpg', use_column_width=True)
+    st.image(r'gettyimages-1458179196-1- (1).jpg', use_column_width=True)
     
     st.subheader("""
     Bem-vindo ao seu aplicativo de Ciências de Dados para o mercado financeiro.
